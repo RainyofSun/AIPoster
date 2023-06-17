@@ -9,21 +9,143 @@
 /* Begin PBXBuildFile section */
 		7B17F0512A3D44FD00818F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0502A3D44FD00818F92 /* AppDelegate.swift */; };
 		7B17F0532A3D44FD00818F92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0522A3D44FD00818F92 /* SceneDelegate.swift */; };
-		7B17F0552A3D44FD00818F92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0542A3D44FD00818F92 /* ViewController.swift */; };
 		7B17F0582A3D44FD00818F92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B17F0562A3D44FD00818F92 /* Main.storyboard */; };
 		7B17F05A2A3D44FE00818F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B17F0592A3D44FE00818F92 /* Assets.xcassets */; };
 		7B17F05D2A3D44FE00818F92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B17F05B2A3D44FE00818F92 /* LaunchScreen.storyboard */; };
+		7B17F0AA2A3D512F00818F92 /* LRNetStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0682A3D512E00818F92 /* LRNetStateManager.swift */; };
+		7B17F0AB2A3D512F00818F92 /* LRIAPCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F06A2A3D512E00818F92 /* LRIAPCache.swift */; };
+		7B17F0AC2A3D512F00818F92 /* LRDebugSettingCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F06B2A3D512E00818F92 /* LRDebugSettingCache.swift */; };
+		7B17F0AD2A3D512F00818F92 /* LRIAPCacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F06C2A3D512E00818F92 /* LRIAPCacheKey.swift */; };
+		7B17F0AE2A3D512F00818F92 /* LRChatBootChatCacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F06D2A3D512E00818F92 /* LRChatBootChatCacheKey.swift */; };
+		7B17F0AF2A3D512F00818F92 /* LRUserDefaultCacheBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F06E2A3D512E00818F92 /* LRUserDefaultCacheBase.swift */; };
+		7B17F0B02A3D512F00818F92 /* LRChatBootChatCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F06F2A3D512E00818F92 /* LRChatBootChatCache.swift */; };
+		7B17F0B12A3D512F00818F92 /* LRUserDefaultADCacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0702A3D512E00818F92 /* LRUserDefaultADCacheKey.swift */; };
+		7B17F0B22A3D512F00818F92 /* LRUserDefaultADCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0712A3D512E00818F92 /* LRUserDefaultADCache.swift */; };
+		7B17F0B32A3D512F00818F92 /* LRDebugSettingCacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0722A3D512E00818F92 /* LRDebugSettingCacheKey.swift */; };
+		7B17F0B42A3D512F00818F92 /* LRGCDTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0742A3D512E00818F92 /* LRGCDTimerManager.swift */; };
+		7B17F0B52A3D512F00818F92 /* LRGCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0752A3D512E00818F92 /* LRGCDTimer.swift */; };
+		7B17F0B62A3D512F00818F92 /* LRVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0772A3D512E00818F92 /* LRVideoPlayer.swift */; };
+		7B17F0B72A3D512F00818F92 /* LRLoopVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0782A3D512E00818F92 /* LRLoopVideoPlayer.swift */; };
+		7B17F0B82A3D512F00818F92 /* LRVideoPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0792A3D512E00818F92 /* LRVideoPlayView.swift */; };
+		7B17F0C12A3D512F00818F92 /* LRLocalizableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0852A3D512E00818F92 /* LRLocalizableManager.swift */; };
+		7B17F0C22A3D512F00818F92 /* LRHostAppBundleResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0872A3D512E00818F92 /* LRHostAppBundleResource.swift */; };
+		7B17F0C32A3D512F00818F92 /* LRBundleResourceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0882A3D512E00818F92 /* LRBundleResourceBase.swift */; };
+		7B17F0C42A3D512F00818F92 /* LRIAPConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F08A2A3D512E00818F92 /* LRIAPConstant.swift */; };
+		7B17F0C52A3D512F00818F92 /* LRIAPStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F08B2A3D512E00818F92 /* LRIAPStoreManager.swift */; };
+		7B17F0C62A3D512F00818F92 /* LRAPPStoreReviewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F08D2A3D512E00818F92 /* LRAPPStoreReviewTool.swift */; };
+		7B17F0C72A3D512F00818F92 /* HSFilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F08F2A3D512E00818F92 /* HSFilePath.swift */; };
+		7B17F0C82A3D512F00818F92 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0912A3D512E00818F92 /* Log.swift */; };
+		7B17F0C92A3D512F00818F92 /* LRDDLogFileSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0922A3D512E00818F92 /* LRDDLogFileSub.swift */; };
+		7B17F0CA2A3D512F00818F92 /* LRCleanDeviceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0942A3D512E00818F92 /* LRCleanDeviceTool.swift */; };
+		7B17F0CB2A3D512F00818F92 /* EmptyDataSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0962A3D512E00818F92 /* EmptyDataSetView.swift */; };
+		7B17F0CC2A3D512F00818F92 /* EmptyDataSetView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0972A3D512E00818F92 /* EmptyDataSetView+Extension.swift */; };
+		7B17F0CD2A3D512F00818F92 /* EmptyDataSetSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0982A3D512E00818F92 /* EmptyDataSetSource.swift */; };
+		7B17F0CE2A3D512F00818F92 /* EmptyDataSetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0992A3D512E00818F92 /* EmptyDataSetDelegate.swift */; };
+		7B17F0CF2A3D512F00818F92 /* EmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F09A2A3D512E00818F92 /* EmptyDataSet.swift */; };
+		7B17F0D02A3D512F00818F92 /* LRGCDTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F09C2A3D512E00818F92 /* LRGCDTool.swift */; };
+		7B17F0F82A3D51D500818F92 /* LRSafeInset+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0DE2A3D51D500818F92 /* LRSafeInset+Window.swift */; };
+		7B17F0F92A3D51D500818F92 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0E02A3D51D500818F92 /* UIColor+Extension.swift */; };
+		7B17F0FA2A3D51D500818F92 /* UIView+IndicatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0E22A3D51D500818F92 /* UIView+IndicatorExtension.swift */; };
+		7B17F0FB2A3D51D500818F92 /* UIView+FrameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0E32A3D51D500818F92 /* UIView+FrameExtension.swift */; };
+		7B17F0FC2A3D51D500818F92 /* UIView+ShadowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0E42A3D51D500818F92 /* UIView+ShadowExtension.swift */; };
+		7B17F0FD2A3D51D500818F92 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0E62A3D51D500818F92 /* Date+Extension.swift */; };
+		7B17F0FE2A3D51D500818F92 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0E72A3D51D500818F92 /* DateFormatter+Extension.swift */; };
+		7B17F0FF2A3D51D500818F92 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0E92A3D51D500818F92 /* Int+Extension.swift */; };
+		7B17F1002A3D51D500818F92 /* CMTime+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0EA2A3D51D500818F92 /* CMTime+Extension.swift */; };
+		7B17F1012A3D51D500818F92 /* UITabBarController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0EC2A3D51D500818F92 /* UITabBarController+Extension.swift */; };
+		7B17F1022A3D51D500818F92 /* UIViewController+FunctionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0ED2A3D51D500818F92 /* UIViewController+FunctionExtension.swift */; };
+		7B17F1032A3D51D500818F92 /* LRViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0EE2A3D51D500818F92 /* LRViewController+extension.swift */; };
+		7B17F1042A3D51D500818F92 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0F02A3D51D500818F92 /* UITableView+Extension.swift */; };
+		7B17F1052A3D51D500818F92 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0F22A3D51D500818F92 /* String+Extension.swift */; };
+		7B17F1062A3D51D500818F92 /* CALayer+FrameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0F42A3D51D500818F92 /* CALayer+FrameExtension.swift */; };
+		7B17F1072A3D51D500818F92 /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0F52A3D51D500818F92 /* CALayer+Extension.swift */; };
+		7B17F1082A3D51D500818F92 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0F72A3D51D500818F92 /* NSObject+Extension.swift */; };
+		7B17F10E2A3D51F800818F92 /* LRAppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F10A2A3D51F800818F92 /* LRAppColor.swift */; };
+		7B17F10F2A3D51F800818F92 /* LRAPPNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F10B2A3D51F800818F92 /* LRAPPNotification.swift */; };
+		7B17F1102A3D51F800818F92 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F10C2A3D51F800818F92 /* Device.swift */; };
+		7B17F1112A3D51F800818F92 /* LRAPPConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F10D2A3D51F800818F92 /* LRAPPConstant.swift */; };
+		7B17F1192A3D52B500818F92 /* LRNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1142A3D52B500818F92 /* LRNavigationViewController.swift */; };
+		7B17F11A2A3D52B500818F92 /* LRAIPosterBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1162A3D52B500818F92 /* LRAIPosterBaseViewController.swift */; };
+		7B17F11B2A3D52B500818F92 /* LRTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1182A3D52B500818F92 /* LRTabbarViewController.swift */; };
+		7B17F1262A3D53BE00818F92 /* LRAIPosterAIImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1252A3D53BE00818F92 /* LRAIPosterAIImageViewController.swift */; };
+		7B17F1282A3D53C600818F92 /* LRAIPosterHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1272A3D53C600818F92 /* LRAIPosterHomeViewController.swift */; };
+		7B17F12A2A3D53CF00818F92 /* LRAIPosterImageEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1292A3D53CF00818F92 /* LRAIPosterImageEditViewController.swift */; };
+		7B17F12C2A3D53DB00818F92 /* LRAIPosterSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F12B2A3D53DB00818F92 /* LRAIPosterSettingViewController.swift */; };
+		7B17F12E2A3D566800818F92 /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F12D2A3D566800818F92 /* SceneDelegateExtension.swift */; };
+		7E04F717D5154C4AEC841631 /* Pods_AIPoster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E07423F4617F3783578AD /* Pods_AIPoster.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B17F04D2A3D44FD00818F92 /* AIPoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIPoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B17F0502A3D44FD00818F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B17F0522A3D44FD00818F92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7B17F0542A3D44FD00818F92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B17F0572A3D44FD00818F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B17F0592A3D44FE00818F92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B17F05C2A3D44FE00818F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B17F05E2A3D44FE00818F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B17F0682A3D512E00818F92 /* LRNetStateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRNetStateManager.swift; sourceTree = "<group>"; };
+		7B17F06A2A3D512E00818F92 /* LRIAPCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRIAPCache.swift; sourceTree = "<group>"; };
+		7B17F06B2A3D512E00818F92 /* LRDebugSettingCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRDebugSettingCache.swift; sourceTree = "<group>"; };
+		7B17F06C2A3D512E00818F92 /* LRIAPCacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRIAPCacheKey.swift; sourceTree = "<group>"; };
+		7B17F06D2A3D512E00818F92 /* LRChatBootChatCacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRChatBootChatCacheKey.swift; sourceTree = "<group>"; };
+		7B17F06E2A3D512E00818F92 /* LRUserDefaultCacheBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUserDefaultCacheBase.swift; sourceTree = "<group>"; };
+		7B17F06F2A3D512E00818F92 /* LRChatBootChatCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRChatBootChatCache.swift; sourceTree = "<group>"; };
+		7B17F0702A3D512E00818F92 /* LRUserDefaultADCacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUserDefaultADCacheKey.swift; sourceTree = "<group>"; };
+		7B17F0712A3D512E00818F92 /* LRUserDefaultADCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUserDefaultADCache.swift; sourceTree = "<group>"; };
+		7B17F0722A3D512E00818F92 /* LRDebugSettingCacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRDebugSettingCacheKey.swift; sourceTree = "<group>"; };
+		7B17F0742A3D512E00818F92 /* LRGCDTimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRGCDTimerManager.swift; sourceTree = "<group>"; };
+		7B17F0752A3D512E00818F92 /* LRGCDTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRGCDTimer.swift; sourceTree = "<group>"; };
+		7B17F0772A3D512E00818F92 /* LRVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRVideoPlayer.swift; sourceTree = "<group>"; };
+		7B17F0782A3D512E00818F92 /* LRLoopVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRLoopVideoPlayer.swift; sourceTree = "<group>"; };
+		7B17F0792A3D512E00818F92 /* LRVideoPlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRVideoPlayView.swift; sourceTree = "<group>"; };
+		7B17F0852A3D512E00818F92 /* LRLocalizableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRLocalizableManager.swift; sourceTree = "<group>"; };
+		7B17F0872A3D512E00818F92 /* LRHostAppBundleResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRHostAppBundleResource.swift; sourceTree = "<group>"; };
+		7B17F0882A3D512E00818F92 /* LRBundleResourceBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRBundleResourceBase.swift; sourceTree = "<group>"; };
+		7B17F08A2A3D512E00818F92 /* LRIAPConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRIAPConstant.swift; sourceTree = "<group>"; };
+		7B17F08B2A3D512E00818F92 /* LRIAPStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRIAPStoreManager.swift; sourceTree = "<group>"; };
+		7B17F08D2A3D512E00818F92 /* LRAPPStoreReviewTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRAPPStoreReviewTool.swift; sourceTree = "<group>"; };
+		7B17F08F2A3D512E00818F92 /* HSFilePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSFilePath.swift; sourceTree = "<group>"; };
+		7B17F0912A3D512E00818F92 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		7B17F0922A3D512E00818F92 /* LRDDLogFileSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRDDLogFileSub.swift; sourceTree = "<group>"; };
+		7B17F0942A3D512E00818F92 /* LRCleanDeviceTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRCleanDeviceTool.swift; sourceTree = "<group>"; };
+		7B17F0962A3D512E00818F92 /* EmptyDataSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetView.swift; sourceTree = "<group>"; };
+		7B17F0972A3D512E00818F92 /* EmptyDataSetView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EmptyDataSetView+Extension.swift"; sourceTree = "<group>"; };
+		7B17F0982A3D512E00818F92 /* EmptyDataSetSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetSource.swift; sourceTree = "<group>"; };
+		7B17F0992A3D512E00818F92 /* EmptyDataSetDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetDelegate.swift; sourceTree = "<group>"; };
+		7B17F09A2A3D512E00818F92 /* EmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSet.swift; sourceTree = "<group>"; };
+		7B17F09C2A3D512E00818F92 /* LRGCDTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRGCDTool.swift; sourceTree = "<group>"; };
+		7B17F0DE2A3D51D500818F92 /* LRSafeInset+Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LRSafeInset+Window.swift"; sourceTree = "<group>"; };
+		7B17F0E02A3D51D500818F92 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		7B17F0E22A3D51D500818F92 /* UIView+IndicatorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+IndicatorExtension.swift"; sourceTree = "<group>"; };
+		7B17F0E32A3D51D500818F92 /* UIView+FrameExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FrameExtension.swift"; sourceTree = "<group>"; };
+		7B17F0E42A3D51D500818F92 /* UIView+ShadowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ShadowExtension.swift"; sourceTree = "<group>"; };
+		7B17F0E62A3D51D500818F92 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		7B17F0E72A3D51D500818F92 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		7B17F0E92A3D51D500818F92 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		7B17F0EA2A3D51D500818F92 /* CMTime+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CMTime+Extension.swift"; sourceTree = "<group>"; };
+		7B17F0EC2A3D51D500818F92 /* UITabBarController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Extension.swift"; sourceTree = "<group>"; };
+		7B17F0ED2A3D51D500818F92 /* UIViewController+FunctionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+FunctionExtension.swift"; sourceTree = "<group>"; };
+		7B17F0EE2A3D51D500818F92 /* LRViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LRViewController+extension.swift"; sourceTree = "<group>"; };
+		7B17F0F02A3D51D500818F92 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		7B17F0F22A3D51D500818F92 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		7B17F0F42A3D51D500818F92 /* CALayer+FrameExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+FrameExtension.swift"; sourceTree = "<group>"; };
+		7B17F0F52A3D51D500818F92 /* CALayer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		7B17F0F72A3D51D500818F92 /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		7B17F10A2A3D51F800818F92 /* LRAppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRAppColor.swift; sourceTree = "<group>"; };
+		7B17F10B2A3D51F800818F92 /* LRAPPNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRAPPNotification.swift; sourceTree = "<group>"; };
+		7B17F10C2A3D51F800818F92 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		7B17F10D2A3D51F800818F92 /* LRAPPConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRAPPConstant.swift; sourceTree = "<group>"; };
+		7B17F1142A3D52B500818F92 /* LRNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRNavigationViewController.swift; sourceTree = "<group>"; };
+		7B17F1162A3D52B500818F92 /* LRAIPosterBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRAIPosterBaseViewController.swift; sourceTree = "<group>"; };
+		7B17F1182A3D52B500818F92 /* LRTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRTabbarViewController.swift; sourceTree = "<group>"; };
+		7B17F1252A3D53BE00818F92 /* LRAIPosterAIImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRAIPosterAIImageViewController.swift; sourceTree = "<group>"; };
+		7B17F1272A3D53C600818F92 /* LRAIPosterHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRAIPosterHomeViewController.swift; sourceTree = "<group>"; };
+		7B17F1292A3D53CF00818F92 /* LRAIPosterImageEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRAIPosterImageEditViewController.swift; sourceTree = "<group>"; };
+		7B17F12B2A3D53DB00818F92 /* LRAIPosterSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRAIPosterSettingViewController.swift; sourceTree = "<group>"; };
+		7B17F12D2A3D566800818F92 /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
+		832BF1ACB3A684D691AB5623 /* Pods-AIPoster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIPoster.debug.xcconfig"; path = "Target Support Files/Pods-AIPoster/Pods-AIPoster.debug.xcconfig"; sourceTree = "<group>"; };
+		A60BFFA5B8CBF51370369BE4 /* Pods-AIPoster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIPoster.release.xcconfig"; path = "Target Support Files/Pods-AIPoster/Pods-AIPoster.release.xcconfig"; sourceTree = "<group>"; };
+		F21E07423F4617F3783578AD /* Pods_AIPoster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIPoster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +153,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E04F717D5154C4AEC841631 /* Pods_AIPoster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F7B959360F0458412A6614A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				832BF1ACB3A684D691AB5623 /* Pods-AIPoster.debug.xcconfig */,
+				A60BFFA5B8CBF51370369BE4 /* Pods-AIPoster.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7B17F0442A3D44FD00818F92 = {
 			isa = PBXGroup;
 			children = (
 				7B17F04F2A3D44FD00818F92 /* AIPoster */,
 				7B17F04E2A3D44FD00818F92 /* Products */,
+				3F7B959360F0458412A6614A /* Pods */,
+				B70E090EE37C0C7286352C9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +190,410 @@
 		7B17F04F2A3D44FD00818F92 /* AIPoster */ = {
 			isa = PBXGroup;
 			children = (
+				7B17F11C2A3D531400818F92 /* Modules */,
+				7B17F1122A3D52B500818F92 /* Navigation&Tab */,
+				7B17F1092A3D51F800818F92 /* Constant */,
+				7B17F0642A3D500B00818F92 /* Delegate */,
+				7B17F0DC2A3D51D500818F92 /* Extension */,
+				7B17F0662A3D512E00818F92 /* Tool */,
+				7B17F0652A3D502700818F92 /* Resource */,
+			);
+			path = AIPoster;
+			sourceTree = "<group>";
+		};
+		7B17F0642A3D500B00818F92 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
 				7B17F0502A3D44FD00818F92 /* AppDelegate.swift */,
 				7B17F0522A3D44FD00818F92 /* SceneDelegate.swift */,
-				7B17F0542A3D44FD00818F92 /* ViewController.swift */,
+				7B17F12D2A3D566800818F92 /* SceneDelegateExtension.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		7B17F0652A3D502700818F92 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				7B17F0562A3D44FD00818F92 /* Main.storyboard */,
 				7B17F0592A3D44FE00818F92 /* Assets.xcassets */,
 				7B17F05B2A3D44FE00818F92 /* LaunchScreen.storyboard */,
 				7B17F05E2A3D44FE00818F92 /* Info.plist */,
 			);
-			path = AIPoster;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7B17F0662A3D512E00818F92 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0672A3D512E00818F92 /* Net */,
+				7B17F0692A3D512E00818F92 /* Cache */,
+				7B17F0732A3D512E00818F92 /* GCDTimer */,
+				7B17F0762A3D512E00818F92 /* VideoPlayer */,
+				7B17F0842A3D512E00818F92 /* LocalizableTool */,
+				7B17F0862A3D512E00818F92 /* BundleResource */,
+				7B17F0892A3D512E00818F92 /* IAP */,
+				7B17F08C2A3D512E00818F92 /* Review */,
+				7B17F08E2A3D512E00818F92 /* FileManager */,
+				7B17F0902A3D512E00818F92 /* Log */,
+				7B17F0932A3D512E00818F92 /* Device */,
+				7B17F0952A3D512E00818F92 /* ScrollViewEmptyView */,
+				7B17F09B2A3D512E00818F92 /* GCDTool */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		7B17F0672A3D512E00818F92 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0682A3D512E00818F92 /* LRNetStateManager.swift */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		7B17F0692A3D512E00818F92 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F06A2A3D512E00818F92 /* LRIAPCache.swift */,
+				7B17F06B2A3D512E00818F92 /* LRDebugSettingCache.swift */,
+				7B17F06C2A3D512E00818F92 /* LRIAPCacheKey.swift */,
+				7B17F06D2A3D512E00818F92 /* LRChatBootChatCacheKey.swift */,
+				7B17F06E2A3D512E00818F92 /* LRUserDefaultCacheBase.swift */,
+				7B17F06F2A3D512E00818F92 /* LRChatBootChatCache.swift */,
+				7B17F0702A3D512E00818F92 /* LRUserDefaultADCacheKey.swift */,
+				7B17F0712A3D512E00818F92 /* LRUserDefaultADCache.swift */,
+				7B17F0722A3D512E00818F92 /* LRDebugSettingCacheKey.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		7B17F0732A3D512E00818F92 /* GCDTimer */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0742A3D512E00818F92 /* LRGCDTimerManager.swift */,
+				7B17F0752A3D512E00818F92 /* LRGCDTimer.swift */,
+			);
+			path = GCDTimer;
+			sourceTree = "<group>";
+		};
+		7B17F0762A3D512E00818F92 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0772A3D512E00818F92 /* LRVideoPlayer.swift */,
+				7B17F0782A3D512E00818F92 /* LRLoopVideoPlayer.swift */,
+				7B17F0792A3D512E00818F92 /* LRVideoPlayView.swift */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		7B17F0842A3D512E00818F92 /* LocalizableTool */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0852A3D512E00818F92 /* LRLocalizableManager.swift */,
+			);
+			path = LocalizableTool;
+			sourceTree = "<group>";
+		};
+		7B17F0862A3D512E00818F92 /* BundleResource */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0872A3D512E00818F92 /* LRHostAppBundleResource.swift */,
+				7B17F0882A3D512E00818F92 /* LRBundleResourceBase.swift */,
+			);
+			path = BundleResource;
+			sourceTree = "<group>";
+		};
+		7B17F0892A3D512E00818F92 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F08A2A3D512E00818F92 /* LRIAPConstant.swift */,
+				7B17F08B2A3D512E00818F92 /* LRIAPStoreManager.swift */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
+		7B17F08C2A3D512E00818F92 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F08D2A3D512E00818F92 /* LRAPPStoreReviewTool.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		7B17F08E2A3D512E00818F92 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F08F2A3D512E00818F92 /* HSFilePath.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		7B17F0902A3D512E00818F92 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0912A3D512E00818F92 /* Log.swift */,
+				7B17F0922A3D512E00818F92 /* LRDDLogFileSub.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		7B17F0932A3D512E00818F92 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0942A3D512E00818F92 /* LRCleanDeviceTool.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		7B17F0952A3D512E00818F92 /* ScrollViewEmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0962A3D512E00818F92 /* EmptyDataSetView.swift */,
+				7B17F0972A3D512E00818F92 /* EmptyDataSetView+Extension.swift */,
+				7B17F0982A3D512E00818F92 /* EmptyDataSetSource.swift */,
+				7B17F0992A3D512E00818F92 /* EmptyDataSetDelegate.swift */,
+				7B17F09A2A3D512E00818F92 /* EmptyDataSet.swift */,
+			);
+			path = ScrollViewEmptyView;
+			sourceTree = "<group>";
+		};
+		7B17F09B2A3D512E00818F92 /* GCDTool */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F09C2A3D512E00818F92 /* LRGCDTool.swift */,
+			);
+			path = GCDTool;
+			sourceTree = "<group>";
+		};
+		7B17F0DC2A3D51D500818F92 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0DD2A3D51D500818F92 /* UIWindow */,
+				7B17F0DF2A3D51D500818F92 /* UIColor */,
+				7B17F0E12A3D51D500818F92 /* UIView */,
+				7B17F0E52A3D51D500818F92 /* Date */,
+				7B17F0E82A3D51D500818F92 /* Int */,
+				7B17F0EB2A3D51D500818F92 /* UIViewController */,
+				7B17F0EF2A3D51D500818F92 /* UITableView */,
+				7B17F0F12A3D51D500818F92 /* String */,
+				7B17F0F32A3D51D500818F92 /* CALayer */,
+				7B17F0F62A3D51D500818F92 /* NSObject */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7B17F0DD2A3D51D500818F92 /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0DE2A3D51D500818F92 /* LRSafeInset+Window.swift */,
+			);
+			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		7B17F0DF2A3D51D500818F92 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0E02A3D51D500818F92 /* UIColor+Extension.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		7B17F0E12A3D51D500818F92 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0E22A3D51D500818F92 /* UIView+IndicatorExtension.swift */,
+				7B17F0E32A3D51D500818F92 /* UIView+FrameExtension.swift */,
+				7B17F0E42A3D51D500818F92 /* UIView+ShadowExtension.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		7B17F0E52A3D51D500818F92 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0E62A3D51D500818F92 /* Date+Extension.swift */,
+				7B17F0E72A3D51D500818F92 /* DateFormatter+Extension.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		7B17F0E82A3D51D500818F92 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0E92A3D51D500818F92 /* Int+Extension.swift */,
+				7B17F0EA2A3D51D500818F92 /* CMTime+Extension.swift */,
+			);
+			path = Int;
+			sourceTree = "<group>";
+		};
+		7B17F0EB2A3D51D500818F92 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0EC2A3D51D500818F92 /* UITabBarController+Extension.swift */,
+				7B17F0ED2A3D51D500818F92 /* UIViewController+FunctionExtension.swift */,
+				7B17F0EE2A3D51D500818F92 /* LRViewController+extension.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		7B17F0EF2A3D51D500818F92 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0F02A3D51D500818F92 /* UITableView+Extension.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		7B17F0F12A3D51D500818F92 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0F22A3D51D500818F92 /* String+Extension.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		7B17F0F32A3D51D500818F92 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0F42A3D51D500818F92 /* CALayer+FrameExtension.swift */,
+				7B17F0F52A3D51D500818F92 /* CALayer+Extension.swift */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		7B17F0F62A3D51D500818F92 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F0F72A3D51D500818F92 /* NSObject+Extension.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		7B17F1092A3D51F800818F92 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F10A2A3D51F800818F92 /* LRAppColor.swift */,
+				7B17F10B2A3D51F800818F92 /* LRAPPNotification.swift */,
+				7B17F10C2A3D51F800818F92 /* Device.swift */,
+				7B17F10D2A3D51F800818F92 /* LRAPPConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		7B17F1122A3D52B500818F92 /* Navigation&Tab */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1132A3D52B500818F92 /* NavigationController */,
+				7B17F1152A3D52B500818F92 /* BaseViewController */,
+				7B17F1172A3D52B500818F92 /* TabbarController */,
+			);
+			path = "Navigation&Tab";
+			sourceTree = "<group>";
+		};
+		7B17F1132A3D52B500818F92 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1142A3D52B500818F92 /* LRNavigationViewController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		7B17F1152A3D52B500818F92 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1162A3D52B500818F92 /* LRAIPosterBaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		7B17F1172A3D52B500818F92 /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1182A3D52B500818F92 /* LRTabbarViewController.swift */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		7B17F11C2A3D531400818F92 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1212A3D539600818F92 /* AI */,
+				7B17F11F2A3D539600818F92 /* Home */,
+				7B17F11D2A3D539600818F92 /* ImageEdit */,
+				7B17F1232A3D539600818F92 /* Setting */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7B17F11D2A3D539600818F92 /* ImageEdit */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F11E2A3D539600818F92 /* VC */,
+			);
+			path = ImageEdit;
+			sourceTree = "<group>";
+		};
+		7B17F11E2A3D539600818F92 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1292A3D53CF00818F92 /* LRAIPosterImageEditViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		7B17F11F2A3D539600818F92 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1202A3D539600818F92 /* VC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7B17F1202A3D539600818F92 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1272A3D53C600818F92 /* LRAIPosterHomeViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		7B17F1212A3D539600818F92 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1222A3D539600818F92 /* VC */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		7B17F1222A3D539600818F92 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1252A3D53BE00818F92 /* LRAIPosterAIImageViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		7B17F1232A3D539600818F92 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1242A3D539600818F92 /* VC */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		7B17F1242A3D539600818F92 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F12B2A3D53DB00818F92 /* LRAIPosterSettingViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B70E090EE37C0C7286352C9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F21E07423F4617F3783578AD /* Pods_AIPoster.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +603,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B17F0612A3D44FE00818F92 /* Build configuration list for PBXNativeTarget "AIPoster" */;
 			buildPhases = (
+				FB9BBD29C25DE9BCD384EFC2 /* [CP] Check Pods Manifest.lock */,
 				7B17F0492A3D44FD00818F92 /* Sources */,
 				7B17F04A2A3D44FD00818F92 /* Frameworks */,
 				7B17F04B2A3D44FD00818F92 /* Resources */,
+				54941AC893737F3BE92AC3F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -94,6 +625,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = LRAIPoster;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
@@ -133,14 +665,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54941AC893737F3BE92AC3F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIPoster/Pods-AIPoster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AIPoster/Pods-AIPoster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AIPoster/Pods-AIPoster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB9BBD29C25DE9BCD384EFC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AIPoster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B17F0492A3D44FD00818F92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B17F0552A3D44FD00818F92 /* ViewController.swift in Sources */,
+				7B17F0D02A3D512F00818F92 /* LRGCDTool.swift in Sources */,
+				7B17F0AF2A3D512F00818F92 /* LRUserDefaultCacheBase.swift in Sources */,
+				7B17F0FD2A3D51D500818F92 /* Date+Extension.swift in Sources */,
+				7B17F0FF2A3D51D500818F92 /* Int+Extension.swift in Sources */,
+				7B17F1012A3D51D500818F92 /* UITabBarController+Extension.swift in Sources */,
+				7B17F0B22A3D512F00818F92 /* LRUserDefaultADCache.swift in Sources */,
+				7B17F1022A3D51D500818F92 /* UIViewController+FunctionExtension.swift in Sources */,
+				7B17F0C82A3D512F00818F92 /* Log.swift in Sources */,
+				7B17F10F2A3D51F800818F92 /* LRAPPNotification.swift in Sources */,
+				7B17F0C92A3D512F00818F92 /* LRDDLogFileSub.swift in Sources */,
+				7B17F0B02A3D512F00818F92 /* LRChatBootChatCache.swift in Sources */,
+				7B17F0CB2A3D512F00818F92 /* EmptyDataSetView.swift in Sources */,
+				7B17F0B32A3D512F00818F92 /* LRDebugSettingCacheKey.swift in Sources */,
+				7B17F1032A3D51D500818F92 /* LRViewController+extension.swift in Sources */,
+				7B17F0FB2A3D51D500818F92 /* UIView+FrameExtension.swift in Sources */,
+				7B17F12E2A3D566800818F92 /* SceneDelegateExtension.swift in Sources */,
+				7B17F0CC2A3D512F00818F92 /* EmptyDataSetView+Extension.swift in Sources */,
+				7B17F0AA2A3D512F00818F92 /* LRNetStateManager.swift in Sources */,
+				7B17F0F82A3D51D500818F92 /* LRSafeInset+Window.swift in Sources */,
+				7B17F1042A3D51D500818F92 /* UITableView+Extension.swift in Sources */,
+				7B17F0B82A3D512F00818F92 /* LRVideoPlayView.swift in Sources */,
+				7B17F0B62A3D512F00818F92 /* LRVideoPlayer.swift in Sources */,
 				7B17F0512A3D44FD00818F92 /* AppDelegate.swift in Sources */,
+				7B17F0F92A3D51D500818F92 /* UIColor+Extension.swift in Sources */,
+				7B17F1192A3D52B500818F92 /* LRNavigationViewController.swift in Sources */,
 				7B17F0532A3D44FD00818F92 /* SceneDelegate.swift in Sources */,
+				7B17F0FE2A3D51D500818F92 /* DateFormatter+Extension.swift in Sources */,
+				7B17F0B42A3D512F00818F92 /* LRGCDTimerManager.swift in Sources */,
+				7B17F0AD2A3D512F00818F92 /* LRIAPCacheKey.swift in Sources */,
+				7B17F0AC2A3D512F00818F92 /* LRDebugSettingCache.swift in Sources */,
+				7B17F11A2A3D52B500818F92 /* LRAIPosterBaseViewController.swift in Sources */,
+				7B17F1062A3D51D500818F92 /* CALayer+FrameExtension.swift in Sources */,
+				7B17F12A2A3D53CF00818F92 /* LRAIPosterImageEditViewController.swift in Sources */,
+				7B17F0C62A3D512F00818F92 /* LRAPPStoreReviewTool.swift in Sources */,
+				7B17F0C72A3D512F00818F92 /* HSFilePath.swift in Sources */,
+				7B17F0C12A3D512F00818F92 /* LRLocalizableManager.swift in Sources */,
+				7B17F0C32A3D512F00818F92 /* LRBundleResourceBase.swift in Sources */,
+				7B17F1102A3D51F800818F92 /* Device.swift in Sources */,
+				7B17F0FC2A3D51D500818F92 /* UIView+ShadowExtension.swift in Sources */,
+				7B17F1112A3D51F800818F92 /* LRAPPConstant.swift in Sources */,
+				7B17F1002A3D51D500818F92 /* CMTime+Extension.swift in Sources */,
+				7B17F1262A3D53BE00818F92 /* LRAIPosterAIImageViewController.swift in Sources */,
+				7B17F0B52A3D512F00818F92 /* LRGCDTimer.swift in Sources */,
+				7B17F1082A3D51D500818F92 /* NSObject+Extension.swift in Sources */,
+				7B17F0AB2A3D512F00818F92 /* LRIAPCache.swift in Sources */,
+				7B17F10E2A3D51F800818F92 /* LRAppColor.swift in Sources */,
+				7B17F1282A3D53C600818F92 /* LRAIPosterHomeViewController.swift in Sources */,
+				7B17F0CD2A3D512F00818F92 /* EmptyDataSetSource.swift in Sources */,
+				7B17F1072A3D51D500818F92 /* CALayer+Extension.swift in Sources */,
+				7B17F0B12A3D512F00818F92 /* LRUserDefaultADCacheKey.swift in Sources */,
+				7B17F0CA2A3D512F00818F92 /* LRCleanDeviceTool.swift in Sources */,
+				7B17F0CE2A3D512F00818F92 /* EmptyDataSetDelegate.swift in Sources */,
+				7B17F1052A3D51D500818F92 /* String+Extension.swift in Sources */,
+				7B17F0CF2A3D512F00818F92 /* EmptyDataSet.swift in Sources */,
+				7B17F0C42A3D512F00818F92 /* LRIAPConstant.swift in Sources */,
+				7B17F11B2A3D52B500818F92 /* LRTabbarViewController.swift in Sources */,
+				7B17F0C52A3D512F00818F92 /* LRIAPStoreManager.swift in Sources */,
+				7B17F0FA2A3D51D500818F92 /* UIView+IndicatorExtension.swift in Sources */,
+				7B17F12C2A3D53DB00818F92 /* LRAIPosterSettingViewController.swift in Sources */,
+				7B17F0B72A3D512F00818F92 /* LRLoopVideoPlayer.swift in Sources */,
+				7B17F0C22A3D512F00818F92 /* LRHostAppBundleResource.swift in Sources */,
+				7B17F0AE2A3D512F00818F92 /* LRChatBootChatCacheKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,13 +915,15 @@
 		};
 		7B17F0622A3D44FE00818F92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832BF1ACB3A684D691AB5623 /* Pods-AIPoster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AIPoster/Info.plist;
+				INFOPLIST_FILE = AIPoster/Resource/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -312,13 +947,15 @@
 		};
 		7B17F0632A3D44FE00818F92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60BFFA5B8CBF51370369BE4 /* Pods-AIPoster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AIPoster/Info.plist;
+				INFOPLIST_FILE = AIPoster/Resource/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

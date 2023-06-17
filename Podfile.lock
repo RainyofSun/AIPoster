@@ -1,0 +1,89 @@
+PODS:
+  - Alamofire (5.7.1)
+  - CocoaLumberjack/Core (3.8.0)
+  - CocoaLumberjack/Swift (3.8.0):
+    - CocoaLumberjack/Core
+  - CryptoSwift (1.5.1)
+  - HandyJSON (5.0.2)
+  - KeychainSwift (20.0.0)
+  - Kingfisher (7.3.0)
+  - lottie-ios (3.4.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - MZRefresh (0.0.5):
+    - NVActivityIndicatorView
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - Reachability (3.2)
+  - SnapKit (5.6.0)
+  - SwiftyJSON (4.3.0)
+  - SwiftyStoreKit (0.16.1)
+  - Toast-Swift (5.0.1)
+  - WCDB.swift (2.0.1):
+    - WCDB.swift/no-arc (= 2.0.1)
+    - WCDBOptimizedSQLCipher (~> 1.4.0)
+  - WCDB.swift/no-arc (2.0.1):
+    - WCDBOptimizedSQLCipher (~> 1.4.0)
+  - WCDBOptimizedSQLCipher (1.4.0)
+
+DEPENDENCIES:
+  - CocoaLumberjack/Swift
+  - CryptoSwift (= 1.5.1)
+  - HandyJSON (= 5.0.2)
+  - KeychainSwift (= 20.0.0)
+  - Kingfisher (= 7.3.0)
+  - lottie-ios (= 3.4.1)
+  - Moya (= 15.0.0)
+  - MZRefresh (= 0.0.5)
+  - Reachability (= 3.2)
+  - SnapKit (= 5.6.0)
+  - SwiftyJSON (= 4.3.0)
+  - SwiftyStoreKit (= 0.16.1)
+  - Toast-Swift (= 5.0.1)
+  - WCDB.swift (= 2.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaLumberjack
+    - CryptoSwift
+    - HandyJSON
+    - KeychainSwift
+    - Kingfisher
+    - lottie-ios
+    - Moya
+    - MZRefresh
+    - NVActivityIndicatorView
+    - Reachability
+    - SnapKit
+    - SwiftyJSON
+    - SwiftyStoreKit
+    - Toast-Swift
+    - WCDB.swift
+    - WCDBOptimizedSQLCipher
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
+  CryptoSwift: c4f2debceb38bf44c80659afe009f71e23e4a082
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  Kingfisher: cdb1189a9223b1bc028816bd47c8b8101a58831c
+  lottie-ios: 016449b5d8be0c3dcbcfa0a9988469999cd04c5d
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  MZRefresh: dc454ce06b967e1fba29c594a6413f224df1617a
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  WCDB.swift: 738cf27df8883c47ef732ea02c44e690da5bb66d
+  WCDBOptimizedSQLCipher: 55124a19f70180eb38163c959dd56695b8af8b60
+
+PODFILE CHECKSUM: 1d5cc5a3fff8a1d73a1a97ac3ee156fa8212ee13
+
+COCOAPODS: 1.11.3
