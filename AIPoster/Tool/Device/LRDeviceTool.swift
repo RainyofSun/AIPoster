@@ -9,7 +9,7 @@ import UIKit
 import AppTrackingTransparency
 import AdSupport
 
-class LRCleanDeviceTool: NSObject {
+class LRDeviceTool: NSObject {
     // MARK: - idfa
     /// 获取当前设备的IDFA
     @discardableResult
@@ -26,29 +26,29 @@ class LRCleanDeviceTool: NSObject {
                         // 用户允许
                         idfaStr = ASIdentifierManager.shared().advertisingIdentifier.uuidString
                     }
-//                    LRFacebookStatistics.shared.advertiserTrackingEnabled(open: (status == .authorized))
+                    LRFacebookStatistics.shared.advertiserTrackingEnabled(open: (status == .authorized))
                     idfaStatus = String(status.rawValue)
                     sem.signal()
                 }
                 let _ = sem.wait(timeout: .distantFuture)
             } else if status == .authorized {
                 idfaStr = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-//                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: true)
+                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: true)
                 idfaStatus = String(status.rawValue)
             } else {
                 idfaStr = "请在设置-隐私-Tracking中允许App请求跟踪"
-//                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: false)
+                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: false)
                 idfaStatus = String(status.rawValue)
             }
         } else {
             // iOS13及之前版本，继续用以前的方式
             if ASIdentifierManager.shared().isAdvertisingTrackingEnabled {
                 idfaStr = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-//                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: true)
+                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: true)
                 idfaStatus = "2"
             } else {
                 idfaStr = "请在设置-隐私-Tracking中允许App请求跟踪"
-//                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: false)
+                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: false)
                 idfaStatus = "3"
             }
         }
@@ -66,12 +66,12 @@ class LRCleanDeviceTool: NSObject {
                     if status == .authorized {
                         Log.debug("用户授予了APP Tracking Authorization ----------")
                     }
-//                    LRFacebookStatistics.shared.advertiserTrackingEnabled(open: (status == .authorized))
+                    LRFacebookStatistics.shared.advertiserTrackingEnabled(open: (status == .authorized))
                 }
             } else if status == .authorized {
-//                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: true)
+                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: true)
             } else {
-//                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: false)
+                LRFacebookStatistics.shared.advertiserTrackingEnabled(open: false)
             }
         }
     }

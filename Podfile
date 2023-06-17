@@ -23,17 +23,17 @@ def HostAPPPods
   # IAP
   pod 'SwiftyStoreKit', '0.16.1'
   # 广告
-#  pod 'Google-Mobile-Ads-SDK', '9.7.0'
+  pod 'Google-Mobile-Ads-SDK', '9.7.0'
   # 推送
 #  pod 'FirebaseMessaging', '9.6.0'
   # 统计
-#  pod 'FBSDKCoreKit', '14.1.0'
-#  pod 'AppsFlyerFramework', '6.8.0'
-#  pod 'FirebaseAnalytics', '9.3.0'
+  pod 'FBSDKCoreKit', '14.1.0'
+  pod 'AppsFlyerFramework', '6.8.0'
+  pod 'FirebaseAnalytics', '9.3.0'
   # 友盟基础库
-#  pod 'UMCommon', '7.4.1'
-#  pod 'UMDevice', '3.1.0'
-#  pod 'UMAPM', '1.8.2'
+  pod 'UMCommon', '7.4.1'
+  pod 'UMDevice', '3.1.0'
+  pod 'UMAPM', '1.8.2'
 
   # 友盟Log
 #  pod 'UMCCommonLog', '2.0.2'

@@ -40,7 +40,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
         // AD 授权
         delay(0.5) {
-            LRCleanDeviceTool.IDFARequest()
+            LRDeviceTool.IDFARequest()
         }
     }
 
@@ -52,14 +52,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
-//        delay(0.2) {
-//            // 广告
-//            let isExpired = LRIAPStoreManager.shared.localVerificationSubscriptionExpirationTime()
-//            // 订阅过期并且是热启动
-//            if isExpired {
-//                LRGoogleOpenADManager.shared.tryToPresentAd(adType: GoogleADType.GoogleOpenAD2)
-//            }
-//        }
+        delay(0.2) {
+            // 广告
+            let isExpired = LRIAPStoreManager.shared.localVerificationSubscriptionExpirationTime()
+            // 订阅过期并且是热启动
+            if isExpired {
+                LRGoogleOpenADManager.shared.tryToPresentAd(adType: GoogleADType.GoogleOpenAD2)
+            }
+        }
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
@@ -72,17 +72,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 
 // MARK: HSADFullScreenContentDelegate
-//extension SceneDelegate: HSADFullScreenContentDelegate {
-//    func hs_adDidDismissFullScreenContent(adType: GoogleADType) {
-//        if self.appLaunchOptions == nil || adType != .GoogleOpenAD1 {
-//            Log.debug("前后台切换,展示开屏广告,广告关闭之后不需要再展示订阅页面 -----------")
-//            return
-//        }
-//
-//        // TODO: 展示订阅页面
-//        self.appLaunchOptions = nil
-//    }
-//}
+extension SceneDelegate: HSADFullScreenContentDelegate {
+    func hs_adDidDismissFullScreenContent(adType: GoogleADType) {
+        if self.appLaunchOptions == nil || adType != .GoogleOpenAD1 {
+            Log.debug("前后台切换,展示开屏广告,广告关闭之后不需要再展示订阅页面 -----------")
+            return
+        }
+
+        // TODO: 展示订阅页面
+        self.appLaunchOptions = nil
+    }
+}
 
 // MARK: Private Methods
 private extension SceneDelegate {
@@ -111,14 +111,14 @@ private extension SceneDelegate {
     
     // ------------ 冷启动广告缓存 ---------------------
     func startAdvertisingCache() {
-//        if LRIAPStoreManager.shared.localVerificationSubscriptionExpirationTime() {
-//            // 开屏广告
-//            let _ = LRGoogleOpenADManager.shared
-//            // 插屏广告
-//            let _ = LRGoogleInterstitialADManager.shared
-//        } else {
-//            Log.debug("VIP 未过期不进行冷启动Google 开屏广告的缓存 --------------")
-//        }
+        if LRIAPStoreManager.shared.localVerificationSubscriptionExpirationTime() {
+            // 开屏广告
+            let _ = LRGoogleOpenADManager.shared
+            // 插屏广告
+            let _ = LRGoogleInterstitialADManager.shared
+        } else {
+            Log.debug("VIP 未过期不进行冷启动Google 开屏广告的缓存 --------------")
+        }
     }
     
     // ------------ 添加IAP监听 ----------------------

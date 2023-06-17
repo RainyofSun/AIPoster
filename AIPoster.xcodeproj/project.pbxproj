@@ -36,7 +36,7 @@
 		7B17F0C72A3D512F00818F92 /* HSFilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F08F2A3D512E00818F92 /* HSFilePath.swift */; };
 		7B17F0C82A3D512F00818F92 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0912A3D512E00818F92 /* Log.swift */; };
 		7B17F0C92A3D512F00818F92 /* LRDDLogFileSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0922A3D512E00818F92 /* LRDDLogFileSub.swift */; };
-		7B17F0CA2A3D512F00818F92 /* LRCleanDeviceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0942A3D512E00818F92 /* LRCleanDeviceTool.swift */; };
+		7B17F0CA2A3D512F00818F92 /* LRDeviceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0942A3D512E00818F92 /* LRDeviceTool.swift */; };
 		7B17F0CB2A3D512F00818F92 /* EmptyDataSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0962A3D512E00818F92 /* EmptyDataSetView.swift */; };
 		7B17F0CC2A3D512F00818F92 /* EmptyDataSetView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0972A3D512E00818F92 /* EmptyDataSetView+Extension.swift */; };
 		7B17F0CD2A3D512F00818F92 /* EmptyDataSetSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F0982A3D512E00818F92 /* EmptyDataSetSource.swift */; };
@@ -72,6 +72,27 @@
 		7B17F12A2A3D53CF00818F92 /* LRAIPosterImageEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1292A3D53CF00818F92 /* LRAIPosterImageEditViewController.swift */; };
 		7B17F12C2A3D53DB00818F92 /* LRAIPosterSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F12B2A3D53DB00818F92 /* LRAIPosterSettingViewController.swift */; };
 		7B17F12E2A3D566800818F92 /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F12D2A3D566800818F92 /* SceneDelegateExtension.swift */; };
+		7B17F1442A3D663200818F92 /* LRFacebookStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1302A3D663200818F92 /* LRFacebookStatistics.swift */; };
+		7B17F1452A3D663200818F92 /* LRFirebaseStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1312A3D663200818F92 /* LRFirebaseStatistics.swift */; };
+		7B17F1462A3D663200818F92 /* LRUMengStatisticsEventKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1322A3D663200818F92 /* LRUMengStatisticsEventKey.swift */; };
+		7B17F1472A3D663200818F92 /* LRFacebookStatisttics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1332A3D663200818F92 /* LRFacebookStatisttics.swift */; };
+		7B17F1482A3D663200818F92 /* LRStatisticsEventKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1342A3D663200818F92 /* LRStatisticsEventKey.swift */; };
+		7B17F1492A3D663200818F92 /* LRAppsFlyerStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1352A3D663200818F92 /* LRAppsFlyerStatistics.swift */; };
+		7B17F14A2A3D663200818F92 /* LRUMengStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1362A3D663200818F92 /* LRUMengStatistics.swift */; };
+		7B17F14B2A3D663200818F92 /* LRRewardADManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1382A3D663200818F92 /* LRRewardADManager.swift */; };
+		7B17F14C2A3D663200818F92 /* LRGoogleOpenADManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1392A3D663200818F92 /* LRGoogleOpenADManager.swift */; };
+		7B17F14D2A3D663200818F92 /* LRInterstitialADManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F13A2A3D663200818F92 /* LRInterstitialADManager.swift */; };
+		7B17F14E2A3D663200818F92 /* LROpenADManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F13B2A3D663200818F92 /* LROpenADManager.swift */; };
+		7B17F14F2A3D663200818F92 /* LRGoogleInterstitialADManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F13C2A3D663200818F92 /* LRGoogleInterstitialADManager.swift */; };
+		7B17F1502A3D663200818F92 /* LRADKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F13D2A3D663200818F92 /* LRADKey.swift */; };
+		7B17F1512A3D663200818F92 /* LRNativeADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F13F2A3D663200818F92 /* LRNativeADView.swift */; };
+		7B17F1522A3D663200818F92 /* LRCleanResultNativeADView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1402A3D663200818F92 /* LRCleanResultNativeADView.swift */; };
+		7B17F1532A3D663200818F92 /* LRBannerADManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1412A3D663200818F92 /* LRBannerADManager.swift */; };
+		7B17F1542A3D663200818F92 /* LRADProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1422A3D663200818F92 /* LRADProtocol.swift */; };
+		7B17F1552A3D663200818F92 /* LRNativeADManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F1432A3D663200818F92 /* LRNativeADManager.swift */; };
+		7B17F15D2A3D672C00818F92 /* LRStarRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F15C2A3D672C00818F92 /* LRStarRateView.swift */; };
+		7B17F15F2A3D67ED00818F92 /* String+AESDecrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17F15E2A3D67ED00818F92 /* String+AESDecrypt.swift */; };
+		7B17F1612A3D862400818F92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B17F1602A3D862400818F92 /* GoogleService-Info.plist */; };
 		7E04F717D5154C4AEC841631 /* Pods_AIPoster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E07423F4617F3783578AD /* Pods_AIPoster.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,7 +128,7 @@
 		7B17F08F2A3D512E00818F92 /* HSFilePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSFilePath.swift; sourceTree = "<group>"; };
 		7B17F0912A3D512E00818F92 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		7B17F0922A3D512E00818F92 /* LRDDLogFileSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRDDLogFileSub.swift; sourceTree = "<group>"; };
-		7B17F0942A3D512E00818F92 /* LRCleanDeviceTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRCleanDeviceTool.swift; sourceTree = "<group>"; };
+		7B17F0942A3D512E00818F92 /* LRDeviceTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRDeviceTool.swift; sourceTree = "<group>"; };
 		7B17F0962A3D512E00818F92 /* EmptyDataSetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetView.swift; sourceTree = "<group>"; };
 		7B17F0972A3D512E00818F92 /* EmptyDataSetView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EmptyDataSetView+Extension.swift"; sourceTree = "<group>"; };
 		7B17F0982A3D512E00818F92 /* EmptyDataSetSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetSource.swift; sourceTree = "<group>"; };
@@ -143,6 +164,28 @@
 		7B17F1292A3D53CF00818F92 /* LRAIPosterImageEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRAIPosterImageEditViewController.swift; sourceTree = "<group>"; };
 		7B17F12B2A3D53DB00818F92 /* LRAIPosterSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRAIPosterSettingViewController.swift; sourceTree = "<group>"; };
 		7B17F12D2A3D566800818F92 /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
+		7B17F1302A3D663200818F92 /* LRFacebookStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRFacebookStatistics.swift; sourceTree = "<group>"; };
+		7B17F1312A3D663200818F92 /* LRFirebaseStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRFirebaseStatistics.swift; sourceTree = "<group>"; };
+		7B17F1322A3D663200818F92 /* LRUMengStatisticsEventKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUMengStatisticsEventKey.swift; sourceTree = "<group>"; };
+		7B17F1332A3D663200818F92 /* LRFacebookStatisttics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRFacebookStatisttics.swift; sourceTree = "<group>"; };
+		7B17F1342A3D663200818F92 /* LRStatisticsEventKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRStatisticsEventKey.swift; sourceTree = "<group>"; };
+		7B17F1352A3D663200818F92 /* LRAppsFlyerStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRAppsFlyerStatistics.swift; sourceTree = "<group>"; };
+		7B17F1362A3D663200818F92 /* LRUMengStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRUMengStatistics.swift; sourceTree = "<group>"; };
+		7B17F1382A3D663200818F92 /* LRRewardADManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRRewardADManager.swift; sourceTree = "<group>"; };
+		7B17F1392A3D663200818F92 /* LRGoogleOpenADManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRGoogleOpenADManager.swift; sourceTree = "<group>"; };
+		7B17F13A2A3D663200818F92 /* LRInterstitialADManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRInterstitialADManager.swift; sourceTree = "<group>"; };
+		7B17F13B2A3D663200818F92 /* LROpenADManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LROpenADManager.swift; sourceTree = "<group>"; };
+		7B17F13C2A3D663200818F92 /* LRGoogleInterstitialADManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRGoogleInterstitialADManager.swift; sourceTree = "<group>"; };
+		7B17F13D2A3D663200818F92 /* LRADKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRADKey.swift; sourceTree = "<group>"; };
+		7B17F13F2A3D663200818F92 /* LRNativeADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRNativeADView.swift; sourceTree = "<group>"; };
+		7B17F1402A3D663200818F92 /* LRCleanResultNativeADView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRCleanResultNativeADView.swift; sourceTree = "<group>"; };
+		7B17F1412A3D663200818F92 /* LRBannerADManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRBannerADManager.swift; sourceTree = "<group>"; };
+		7B17F1422A3D663200818F92 /* LRADProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRADProtocol.swift; sourceTree = "<group>"; };
+		7B17F1432A3D663200818F92 /* LRNativeADManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRNativeADManager.swift; sourceTree = "<group>"; };
+		7B17F1562A3D66B800818F92 /* AIPoster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AIPoster-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B17F15C2A3D672C00818F92 /* LRStarRateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRStarRateView.swift; sourceTree = "<group>"; };
+		7B17F15E2A3D67ED00818F92 /* String+AESDecrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AESDecrypt.swift"; sourceTree = "<group>"; };
+		7B17F1602A3D862400818F92 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		832BF1ACB3A684D691AB5623 /* Pods-AIPoster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIPoster.debug.xcconfig"; path = "Target Support Files/Pods-AIPoster/Pods-AIPoster.debug.xcconfig"; sourceTree = "<group>"; };
 		A60BFFA5B8CBF51370369BE4 /* Pods-AIPoster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIPoster.release.xcconfig"; path = "Target Support Files/Pods-AIPoster/Pods-AIPoster.release.xcconfig"; sourceTree = "<group>"; };
 		F21E07423F4617F3783578AD /* Pods_AIPoster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIPoster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				7B17F11C2A3D531400818F92 /* Modules */,
+				7B17F15A2A3D671900818F92 /* Widget */,
 				7B17F1122A3D52B500818F92 /* Navigation&Tab */,
 				7B17F1092A3D51F800818F92 /* Constant */,
 				7B17F0642A3D500B00818F92 /* Delegate */,
@@ -214,10 +258,12 @@
 		7B17F0652A3D502700818F92 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				7B17F1602A3D862400818F92 /* GoogleService-Info.plist */,
 				7B17F0562A3D44FD00818F92 /* Main.storyboard */,
 				7B17F0592A3D44FE00818F92 /* Assets.xcassets */,
 				7B17F05B2A3D44FE00818F92 /* LaunchScreen.storyboard */,
 				7B17F05E2A3D44FE00818F92 /* Info.plist */,
+				7B17F1562A3D66B800818F92 /* AIPoster-Bridging-Header.h */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -225,6 +271,8 @@
 		7B17F0662A3D512E00818F92 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				7B17F1372A3D663200818F92 /* ADTools */,
+				7B17F12F2A3D663200818F92 /* BuriedPointStatistics */,
 				7B17F0672A3D512E00818F92 /* Net */,
 				7B17F0692A3D512E00818F92 /* Cache */,
 				7B17F0732A3D512E00818F92 /* GCDTimer */,
@@ -339,7 +387,7 @@
 		7B17F0932A3D512E00818F92 /* Device */ = {
 			isa = PBXGroup;
 			children = (
-				7B17F0942A3D512E00818F92 /* LRCleanDeviceTool.swift */,
+				7B17F0942A3D512E00818F92 /* LRDeviceTool.swift */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -447,6 +495,7 @@
 			isa = PBXGroup;
 			children = (
 				7B17F0F22A3D51D500818F92 /* String+Extension.swift */,
+				7B17F15E2A3D67ED00818F92 /* String+AESDecrypt.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -588,6 +637,62 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		7B17F12F2A3D663200818F92 /* BuriedPointStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1302A3D663200818F92 /* LRFacebookStatistics.swift */,
+				7B17F1312A3D663200818F92 /* LRFirebaseStatistics.swift */,
+				7B17F1322A3D663200818F92 /* LRUMengStatisticsEventKey.swift */,
+				7B17F1332A3D663200818F92 /* LRFacebookStatisttics.swift */,
+				7B17F1342A3D663200818F92 /* LRStatisticsEventKey.swift */,
+				7B17F1352A3D663200818F92 /* LRAppsFlyerStatistics.swift */,
+				7B17F1362A3D663200818F92 /* LRUMengStatistics.swift */,
+			);
+			path = BuriedPointStatistics;
+			sourceTree = "<group>";
+		};
+		7B17F1372A3D663200818F92 /* ADTools */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F1382A3D663200818F92 /* LRRewardADManager.swift */,
+				7B17F1392A3D663200818F92 /* LRGoogleOpenADManager.swift */,
+				7B17F13A2A3D663200818F92 /* LRInterstitialADManager.swift */,
+				7B17F13B2A3D663200818F92 /* LROpenADManager.swift */,
+				7B17F13C2A3D663200818F92 /* LRGoogleInterstitialADManager.swift */,
+				7B17F13D2A3D663200818F92 /* LRADKey.swift */,
+				7B17F13E2A3D663200818F92 /* NativeView */,
+				7B17F1412A3D663200818F92 /* LRBannerADManager.swift */,
+				7B17F1422A3D663200818F92 /* LRADProtocol.swift */,
+				7B17F1432A3D663200818F92 /* LRNativeADManager.swift */,
+			);
+			path = ADTools;
+			sourceTree = "<group>";
+		};
+		7B17F13E2A3D663200818F92 /* NativeView */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F13F2A3D663200818F92 /* LRNativeADView.swift */,
+				7B17F1402A3D663200818F92 /* LRCleanResultNativeADView.swift */,
+			);
+			path = NativeView;
+			sourceTree = "<group>";
+		};
+		7B17F15A2A3D671900818F92 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F15B2A3D672C00818F92 /* StarView */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		7B17F15B2A3D672C00818F92 /* StarView */ = {
+			isa = PBXGroup;
+			children = (
+				7B17F15C2A3D672C00818F92 /* LRStarRateView.swift */,
+			);
+			path = StarView;
+			sourceTree = "<group>";
+		};
 		B70E090EE37C0C7286352C9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +736,7 @@
 				TargetAttributes = {
 					7B17F04C2A3D44FD00818F92 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -658,6 +764,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B17F05D2A3D44FE00818F92 /* LaunchScreen.storyboard in Resources */,
+				7B17F1612A3D862400818F92 /* GoogleService-Info.plist in Resources */,
 				7B17F05A2A3D44FE00818F92 /* Assets.xcassets in Resources */,
 				7B17F0582A3D44FD00818F92 /* Main.storyboard in Resources */,
 			);
@@ -720,6 +827,8 @@
 				7B17F0B22A3D512F00818F92 /* LRUserDefaultADCache.swift in Sources */,
 				7B17F1022A3D51D500818F92 /* UIViewController+FunctionExtension.swift in Sources */,
 				7B17F0C82A3D512F00818F92 /* Log.swift in Sources */,
+				7B17F1482A3D663200818F92 /* LRStatisticsEventKey.swift in Sources */,
+				7B17F14F2A3D663200818F92 /* LRGoogleInterstitialADManager.swift in Sources */,
 				7B17F10F2A3D51F800818F92 /* LRAPPNotification.swift in Sources */,
 				7B17F0C92A3D512F00818F92 /* LRDDLogFileSub.swift in Sources */,
 				7B17F0B02A3D512F00818F92 /* LRChatBootChatCache.swift in Sources */,
@@ -727,6 +836,8 @@
 				7B17F0B32A3D512F00818F92 /* LRDebugSettingCacheKey.swift in Sources */,
 				7B17F1032A3D51D500818F92 /* LRViewController+extension.swift in Sources */,
 				7B17F0FB2A3D51D500818F92 /* UIView+FrameExtension.swift in Sources */,
+				7B17F1472A3D663200818F92 /* LRFacebookStatisttics.swift in Sources */,
+				7B17F1532A3D663200818F92 /* LRBannerADManager.swift in Sources */,
 				7B17F12E2A3D566800818F92 /* SceneDelegateExtension.swift in Sources */,
 				7B17F0CC2A3D512F00818F92 /* EmptyDataSetView+Extension.swift in Sources */,
 				7B17F0AA2A3D512F00818F92 /* LRNetStateManager.swift in Sources */,
@@ -738,42 +849,58 @@
 				7B17F0F92A3D51D500818F92 /* UIColor+Extension.swift in Sources */,
 				7B17F1192A3D52B500818F92 /* LRNavigationViewController.swift in Sources */,
 				7B17F0532A3D44FD00818F92 /* SceneDelegate.swift in Sources */,
+				7B17F1462A3D663200818F92 /* LRUMengStatisticsEventKey.swift in Sources */,
 				7B17F0FE2A3D51D500818F92 /* DateFormatter+Extension.swift in Sources */,
 				7B17F0B42A3D512F00818F92 /* LRGCDTimerManager.swift in Sources */,
 				7B17F0AD2A3D512F00818F92 /* LRIAPCacheKey.swift in Sources */,
 				7B17F0AC2A3D512F00818F92 /* LRDebugSettingCache.swift in Sources */,
 				7B17F11A2A3D52B500818F92 /* LRAIPosterBaseViewController.swift in Sources */,
+				7B17F14D2A3D663200818F92 /* LRInterstitialADManager.swift in Sources */,
+				7B17F14A2A3D663200818F92 /* LRUMengStatistics.swift in Sources */,
+				7B17F1452A3D663200818F92 /* LRFirebaseStatistics.swift in Sources */,
+				7B17F1552A3D663200818F92 /* LRNativeADManager.swift in Sources */,
 				7B17F1062A3D51D500818F92 /* CALayer+FrameExtension.swift in Sources */,
 				7B17F12A2A3D53CF00818F92 /* LRAIPosterImageEditViewController.swift in Sources */,
+				7B17F1512A3D663200818F92 /* LRNativeADView.swift in Sources */,
 				7B17F0C62A3D512F00818F92 /* LRAPPStoreReviewTool.swift in Sources */,
+				7B17F15F2A3D67ED00818F92 /* String+AESDecrypt.swift in Sources */,
 				7B17F0C72A3D512F00818F92 /* HSFilePath.swift in Sources */,
 				7B17F0C12A3D512F00818F92 /* LRLocalizableManager.swift in Sources */,
 				7B17F0C32A3D512F00818F92 /* LRBundleResourceBase.swift in Sources */,
 				7B17F1102A3D51F800818F92 /* Device.swift in Sources */,
 				7B17F0FC2A3D51D500818F92 /* UIView+ShadowExtension.swift in Sources */,
+				7B17F1442A3D663200818F92 /* LRFacebookStatistics.swift in Sources */,
 				7B17F1112A3D51F800818F92 /* LRAPPConstant.swift in Sources */,
 				7B17F1002A3D51D500818F92 /* CMTime+Extension.swift in Sources */,
 				7B17F1262A3D53BE00818F92 /* LRAIPosterAIImageViewController.swift in Sources */,
 				7B17F0B52A3D512F00818F92 /* LRGCDTimer.swift in Sources */,
+				7B17F1502A3D663200818F92 /* LRADKey.swift in Sources */,
 				7B17F1082A3D51D500818F92 /* NSObject+Extension.swift in Sources */,
+				7B17F14C2A3D663200818F92 /* LRGoogleOpenADManager.swift in Sources */,
+				7B17F14E2A3D663200818F92 /* LROpenADManager.swift in Sources */,
 				7B17F0AB2A3D512F00818F92 /* LRIAPCache.swift in Sources */,
 				7B17F10E2A3D51F800818F92 /* LRAppColor.swift in Sources */,
 				7B17F1282A3D53C600818F92 /* LRAIPosterHomeViewController.swift in Sources */,
 				7B17F0CD2A3D512F00818F92 /* EmptyDataSetSource.swift in Sources */,
 				7B17F1072A3D51D500818F92 /* CALayer+Extension.swift in Sources */,
 				7B17F0B12A3D512F00818F92 /* LRUserDefaultADCacheKey.swift in Sources */,
-				7B17F0CA2A3D512F00818F92 /* LRCleanDeviceTool.swift in Sources */,
+				7B17F0CA2A3D512F00818F92 /* LRDeviceTool.swift in Sources */,
 				7B17F0CE2A3D512F00818F92 /* EmptyDataSetDelegate.swift in Sources */,
 				7B17F1052A3D51D500818F92 /* String+Extension.swift in Sources */,
 				7B17F0CF2A3D512F00818F92 /* EmptyDataSet.swift in Sources */,
+				7B17F1522A3D663200818F92 /* LRCleanResultNativeADView.swift in Sources */,
 				7B17F0C42A3D512F00818F92 /* LRIAPConstant.swift in Sources */,
+				7B17F14B2A3D663200818F92 /* LRRewardADManager.swift in Sources */,
 				7B17F11B2A3D52B500818F92 /* LRTabbarViewController.swift in Sources */,
+				7B17F1492A3D663200818F92 /* LRAppsFlyerStatistics.swift in Sources */,
 				7B17F0C52A3D512F00818F92 /* LRIAPStoreManager.swift in Sources */,
 				7B17F0FA2A3D51D500818F92 /* UIView+IndicatorExtension.swift in Sources */,
 				7B17F12C2A3D53DB00818F92 /* LRAIPosterSettingViewController.swift in Sources */,
 				7B17F0B72A3D512F00818F92 /* LRLoopVideoPlayer.swift in Sources */,
+				7B17F1542A3D663200818F92 /* LRADProtocol.swift in Sources */,
 				7B17F0C22A3D512F00818F92 /* LRHostAppBundleResource.swift in Sources */,
 				7B17F0AE2A3D512F00818F92 /* LRChatBootChatCacheKey.swift in Sources */,
+				7B17F15D2A3D672C00818F92 /* LRStarRateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -919,6 +1046,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -940,6 +1068,8 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AIPoster/Resource/AIPoster-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -951,6 +1081,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -972,6 +1103,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AIPoster/Resource/AIPoster-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
